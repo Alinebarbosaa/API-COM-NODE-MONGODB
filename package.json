@@ -1,0 +1,26 @@
+{
+  "name": "api-com-node-mongodb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alinebarbosaa/API-COM-NODE-MONGODB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alinebarbosaa/API-COM-NODE-MONGODB/issues"
+  },
+  "homepage": "https://github.com/Alinebarbosaa/API-COM-NODE-MONGODB#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.19.1",
+    "nodemon": "^3.1.10"
+  }
+}
