@@ -1,24 +1,16 @@
 import express from 'express'
 
-import User from './models/user.js'
+import connectDatabase from './database/db.js'
+import routes from '/routes.js'
 
 const app = express()
 
 app.use(express.json())
-
-
-app.get("/users", async (request, response) => {
- 
-});
-
-app.post("/users", async (request, response) => {
-  
-})
-
+app.use(routes)
 
 connectDatabase()
     .then(() => {
-        app.listen(3000, () => console.log("Servidor rodando e Bamco de dados conectados"))
+        app.listen(3000, () => console.log("Servidor rodando e Banco de dados conectado"))
     })
     .catch((error) => console.log(error))
 
